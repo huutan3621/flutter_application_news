@@ -75,7 +75,8 @@ class _SearchChildState extends State<SearchChild> {
                                   ? Image.network(
                                       '${cubit.state.articleList[index].urlToImage}',
                                     )
-                                  : const SizedBox.shrink()
+                                  : const SizedBox.shrink(),
+                              Text(cubit.state.articleList[index].source?.name ?? ""),
                             ],
                           ),
                         );
